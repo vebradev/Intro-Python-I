@@ -34,7 +34,7 @@ from datetime import datetime
 month = datetime.now().month
 year = datetime.now().year
 
-cal = calendar.month(int(year),int(month))
+cal = calendar.month(int(year), int(month))
 
 if len(sys.argv) == 2:
     month = sys.argv[1]
@@ -43,5 +43,6 @@ elif len(sys.argv) == 3:
     year = sys.argv[2]
 elif len(sys.argv) > 3:
     print("Format expected: `14_cal.py [month] [year]`")
-    
+    exit()
+
 print(cal)
